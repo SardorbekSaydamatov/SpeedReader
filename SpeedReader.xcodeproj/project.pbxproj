@@ -6,6 +6,14 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		8413F96E2CE6110300CDD446 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8413F9672CE6110300CDD446 /* Preview Assets.xcassets */; };
+		8413F96F2CE6110300CDD446 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8413F9692CE6110300CDD446 /* Assets.xcassets */; };
+		8413F9702CE6110300CDD446 /* SpeedReaderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8413F96B2CE6110300CDD446 /* SpeedReaderApp.swift */; };
+		8413F9712CE6110300CDD446 /* SpeedReadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8413F96C2CE6110300CDD446 /* SpeedReadingView.swift */; };
+		8413F9742CE6111A00CDD446 /* SpeedSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8413F9732CE6111A00CDD446 /* SpeedSettingsView.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		8413F94B2CE6043D00CDD446 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,14 +35,15 @@
 		8413F9392CE6043B00CDD446 /* SpeedReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeedReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8413F94A2CE6043D00CDD446 /* SpeedReaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpeedReaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8413F9542CE6043D00CDD446 /* SpeedReaderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpeedReaderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8413F9672CE6110300CDD446 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8413F9692CE6110300CDD446 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8413F96A2CE6110300CDD446 /* SpeedReader.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SpeedReader.entitlements; sourceTree = "<group>"; };
+		8413F96B2CE6110300CDD446 /* SpeedReaderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedReaderApp.swift; sourceTree = "<group>"; };
+		8413F96C2CE6110300CDD446 /* SpeedReadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedReadingView.swift; sourceTree = "<group>"; };
+		8413F9732CE6111A00CDD446 /* SpeedSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedSettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		8413F93B2CE6043B00CDD446 /* SpeedReader */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = SpeedReader;
-			sourceTree = "<group>";
-		};
 		8413F94D2CE6043D00CDD446 /* SpeedReaderTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = SpeedReaderTests;
@@ -75,7 +84,7 @@
 		8413F9302CE6043B00CDD446 = {
 			isa = PBXGroup;
 			children = (
-				8413F93B2CE6043B00CDD446 /* SpeedReader */,
+				8413F96D2CE6110300CDD446 /* SpeedReader */,
 				8413F94D2CE6043D00CDD446 /* SpeedReaderTests */,
 				8413F9572CE6043D00CDD446 /* SpeedReaderUITests */,
 				8413F93A2CE6043B00CDD446 /* Products */,
@@ -92,6 +101,35 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		8413F9682CE6110300CDD446 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				8413F9672CE6110300CDD446 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8413F96D2CE6110300CDD446 /* SpeedReader */ = {
+			isa = PBXGroup;
+			children = (
+				8413F9722CE6110900CDD446 /* Views */,
+				8413F9682CE6110300CDD446 /* Preview Content */,
+				8413F9692CE6110300CDD446 /* Assets.xcassets */,
+				8413F96A2CE6110300CDD446 /* SpeedReader.entitlements */,
+				8413F96B2CE6110300CDD446 /* SpeedReaderApp.swift */,
+			);
+			path = SpeedReader;
+			sourceTree = "<group>";
+		};
+		8413F9722CE6110900CDD446 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8413F96C2CE6110300CDD446 /* SpeedReadingView.swift */,
+				8413F9732CE6111A00CDD446 /* SpeedSettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +144,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				8413F93B2CE6043B00CDD446 /* SpeedReader */,
 			);
 			name = SpeedReader;
 			packageProductDependencies = (
@@ -212,6 +247,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8413F96E2CE6110300CDD446 /* Preview Assets.xcassets in Resources */,
+				8413F96F2CE6110300CDD446 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +273,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8413F9702CE6110300CDD446 /* SpeedReaderApp.swift in Sources */,
+				8413F9742CE6111A00CDD446 /* SpeedSettingsView.swift in Sources */,
+				8413F9712CE6110300CDD446 /* SpeedReadingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
