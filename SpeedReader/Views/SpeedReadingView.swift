@@ -17,7 +17,7 @@ struct SpeedReaderView: View {
     @State private var showSettings = false
     @State private var timer: Timer?
     
-    let speedOptions = [100, 200, 300, 400, 500, 600, 700, 800]
+    let speedOptions = [50, 100, 200, 300, 400, 500, 600, 700, 800]
     var body: some View {
         VStack {
             Spacer()
